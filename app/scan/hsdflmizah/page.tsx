@@ -26,39 +26,39 @@ const dummyInstagramData = {
   securityScore: 65,
 };
 const securityAlerts = [
-    {
-      type: "Email Leak",
-      details: "Email address exposed in 2 data breaches",
-      severity: "high",
-      date: "2023-12-15",
-      icon: Mail,
-      affectedServices: ["Instagram", "WhatsApp"]
-    },
-    {
-      type: "Phone Number",
-      details: "Phone number found in public databases",
-      severity: "medium",
-      date: "2023-11-20",
-      icon: Phone,
-      affectedServices: ["Instagram"]
-    },
-    {
-      type: "Password",
-      details: "Similar passwords found in dark web",
-      severity: "critical",
-      date: "2024-01-05",
-      icon: KeyRound,
-      affectedServices: ["Unknown Source"]
-    },
-    {
-      type: "Personal Info",
-      details: " location data exposed",
-      severity: "low",
-      date: "2023-10-30",
-      icon: User2,
-      affectedServices: ["Instagram"]
-    }
-  ];
+  {
+    type: "Email Leak",
+    details: "Email address exposed in 2 data breaches",
+    severity: "high",
+    date: "2023-12-15",
+    icon: Mail,
+    affectedServices: ["Instagram", "WhatsApp"],
+  },
+  {
+    type: "Phone Number",
+    details: "Phone number found in public databases",
+    severity: "medium",
+    date: "2023-11-20",
+    icon: Phone,
+    affectedServices: ["Instagram"],
+  },
+  {
+    type: "Password",
+    details: "Similar passwords found in dark web",
+    severity: "critical",
+    date: "2024-01-05",
+    icon: KeyRound,
+    affectedServices: ["Unknown Source"],
+  },
+  {
+    type: "Personal Info",
+    details: " location data exposed",
+    severity: "low",
+    date: "2023-10-30",
+    icon: User2,
+    affectedServices: ["Instagram"],
+  },
+];
 export default function ScanPage() {
   const [showAgreement, setShowAgreement] = useState(true);
   const [agreed, setAgreed] = useState(false);
@@ -79,9 +79,13 @@ export default function ScanPage() {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="p-6 rounded-lg border border-border/10 backdrop-blur-sm">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="h-20 w-20 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center">
-                  <User className="h-10 w-10 text-white" />
-                </div>
+                <Image
+                  src="/pfp.jpg"
+                  width={100}
+                  height={100}
+                  alt="profile_picture"
+                  className=" text-blue-500"
+                />
                 <div>
                   <h1 className="text-2xl font-bold">
                     {dummyInstagramData.username}
