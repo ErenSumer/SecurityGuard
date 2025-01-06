@@ -114,6 +114,10 @@ export default function AgreementModal({
                   No actual connection to Instagram or its services is
                   established
                 </li>
+
+                <li>
+                  By continuing, you agree on your Information being collected
+                  </li>
               </ul>
 
               {/* Add more sections to make it scrollable */}
