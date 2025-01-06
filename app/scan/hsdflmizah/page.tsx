@@ -1,19 +1,23 @@
 "use client";
 
 import { useState } from "react";
-import {
-  Shield,
-  ShieldAlert,
-  Instagram,
-  User,
-  Lock,
-  Globe,
+import { 
+  Shield, 
+  ShieldAlert, 
+  Instagram, 
+  User, 
+  Lock, 
+  Globe, 
   Bell,
+  Mail, 
+  Phone, 
+  KeyRound, 
+  User2 
 } from "lucide-react";
 import { Dialog } from "@/components/ui/dialog";
 import ScannerInterface from "@/components/ScannerInterface";
-import { Mail, Phone, KeyRound, User2 } from "lucide-react";
 import AgreementModal from "@/components/AgreementModal";
+
 import Image from "next/image";
 const dummyInstagramData = {
   username: "hsdflmizah",

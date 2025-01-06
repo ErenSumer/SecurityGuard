@@ -135,7 +135,7 @@ export default function AgreementModal({
 
               <h3 className="font-semibold">6. Final Provisions</h3>
               <p>
-                By scrolling to the bottom and clicking "Accept", you
+                By scrolling to the bottom and clicking &quot;Accept&quot;, you
                 acknowledge that you have read and agree to all the terms
                 outlined above.
               </p>
